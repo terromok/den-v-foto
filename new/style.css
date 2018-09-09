@@ -29,22 +29,24 @@ article {
 article img {
 	width: 100%;
 }
-.reklama {
+.reklama1 {
 	display: flex;
 }
-.reklama span {
+.reklama_text span {
 
 }
-.reklama h4 {
+.reklama_text h4 {
 	
 }
-.reklama p {
+.reklama_text p {
 	
 }
 .width480 {
 	display: none;
 }
-
+.width768 {
+  display: none;
+}
 
 @media screen and (min-width: 480px) {
   .container {
@@ -54,47 +56,90 @@ article img {
   .width480 {
     display: block;
   }
-  .doadidasa article {
+  .reklama {
+   width: 36.37%;
+  }
+  .reklama img {
+    width: 100%;
+  }
+  .doreklama article {
   	width: 31.01%;
   }
-  .doadidasa article:nth-child(3n) {
+  .doreklama article:nth-child(3n) {
   margin-right: 0; 
   }
-  
-  /*.adidas {
-  	float: right;
-  	margin-right: 0s;
-  	width: 33.3%;
-  	
-  }
-  .adidas a{
-  	width: 33.3%;
-  }*/
   .width320 {
   display: none;
   }
-  .doadidasa {
+  .doreklama {
   	display: flex;
   	/*align-self: stretch;*/
   	justify-content: space-between;
-  	
   }
-
-  .doadidasa__articles {
+  .doreklama__articles {
   	width: 59.13%;
   	display: flex;
   	justify-content: space-between;
   	flex-wrap: wrap;
   }
-  .afteradidasa {
+  .afterreklama {
   	display: flex;
   	flex-wrap: wrap;
   	justify-content: space-between;
   }
-  .afteradidasa article{
+  .afterreklama article{
   	width: 18.18%;
   }
-  .afteradidasa article:nth-child(5n) {
+  .afterreklama article:nth-child(5n) {
+  margin-right: 0; 
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0 34px;
+  }
+  
+  .width768 {
+    display: block;
+  }
+  .reklama {
+    width: 23.43%;
+  }
+  .reklama img {
+    width: 100%;
+  }
+  .doreklama article {
+    width: 31.01%;
+  }
+  .doreklama article:nth-child(3n) {
+  margin-right: 0; 
+  }
+  .width320 {
+  display: none;
+  }
+  .width480 {
+  display: none;
+}
+  .doreklama {
+    display: flex;
+    justify-content: space-between;
+  }
+  .doreklama__articles {
+    width: 74.5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .afterreklama {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .afterreklama article{
+    width: 23.43%;
+  }
+  .afterreklama article:nth-child(4n) {
   margin-right: 0; 
   }
 }
