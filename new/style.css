@@ -11,6 +11,20 @@ body {
 .container {
 	margin: 0 5px;
 }
+.header-line {
+  width: 119px;
+  height: 2px;
+  background-color: black;
+  float: right;
+}
+header h1 {
+  font-family: PlayfairDisplay;
+  color: #010101;
+  font-size: 26px; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: left;
+  margin-top: 25px;
+}
 header img {
 	width: 100%;
 }
@@ -29,17 +43,52 @@ article {
 article img {
 	width: 100%;
 }
+article p {
+    font-family: NotoSerif;
+    color: #000000;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+  }
+  article span {
+    font-family: NotoSerif;
+    color: #000000;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+  }
 .reklama1 {
 	display: flex;
 }
+.reklama_text {
+  margin-left: 19px;
+}
 .reklama_text span {
-
+  font-family: NotoSans;
+  color: #bebebe;
+  font-size: 10px; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: left;
 }
 .reklama_text h4 {
-	
+	font-family: NotoSans;
+  color: #000000;
+  font-size: 13px; /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 18px; /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+
+
 }
 .reklama_text p {
-	
+  font-family: NotoSans;
+  color: #000000;
+  font-size: 12px; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 18px; /* Приближение из-за подстановки шрифтов */
+  text-align: left;	
 }
 .width480 {
 	display: none;
@@ -51,6 +100,44 @@ article img {
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .container {
   	margin: 0 20px;
+  }
+  header h1 {
+    width: 265px;
+    height: 39px;
+    font-family: PlayfairDisplay;
+    color: #010101;
+    font-size: 40px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    /*line-height: 18px; /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+  }
+  .header-line {
+    width: 157px;
+    height: 2px;
+    background-color: black;
+    float: right;
+  }
+  header img {
+    margin-top: 25px;
+  }
+  article {
+    margin-bottom: 10px;
+  }
+  article p {
+    font-family: NotoSerif;
+    color: #000000;
+    font-size: 18px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+  }
+  article span {
+    font-family: NotoSerif;
+    color: #000000;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
   }
   
   .width480 {
@@ -130,6 +217,7 @@ article img {
   }
   header img {
     margin-top: 25px;
+    z-index: 1;
   }
   article {
     margin-bottom: 20px;
